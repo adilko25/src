@@ -105,11 +105,6 @@ public class Main {
         for (ClothingItem item : items) {
             item.display(); // same method, different behavior
 
-                if (item instanceof Shirt) {
-                    Shirt shirt = (Shirt) item;
-                    System.out.println("Has print: " + (shirt.hasPrint() ? "Yes" : "No"));
-                }
-
                 System.out.println();
         }
     }
