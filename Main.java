@@ -104,6 +104,13 @@ public class Main {
         System.out.println("\n--- POLYMORPHISM DEMO ---");
         for (ClothingItem item : items) {
             item.display(); // same method, different behavior
+
+                if (item instanceof Shirt) {
+                    Shirt shirt = (Shirt) item;
+                    System.out.println("Has print: " + (shirt.hasPrint() ? "Yes" : "No"));
+                }
+
+                System.out.println();
         }
     }
 
